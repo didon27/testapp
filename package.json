@@ -1,0 +1,15 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "cd TestApp && yarn && cd ..",
+    "notify:ios": "curl --request GET --url 'http://localhost:3000'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4"
+  }
+}
